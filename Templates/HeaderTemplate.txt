@@ -1,0 +1,11 @@
+#pragma once
+
+#include "{{data.name}}.generated.h"
+
+UCLASS()
+class {{data.prefix}}{{data.name}}
+{
+	GENERATED_BODY()
+public:
+	{{data.prefix}}{{data.name}}(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
+};

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+6MpkHPSEwSNaNJcbU6LoFmLd4YF7p4SD8J9DX/4OzLDsT6kFcUP5WrlZV/lbzr4vKrIISIK8NaO4Go2ky8lxQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\Repository\\Unreal-Class-Generator\\Project\\UnrealClassGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\scriban\\5.9.0\\scriban.5.9.0.nupkg.sha512"
+  ],
+  "logs": []
+}

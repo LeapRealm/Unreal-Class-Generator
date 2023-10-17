@@ -1,0 +1,8 @@
+#include "{{data.name}}.h"
+#include UE_INLINE_GENERATED_CPP_BY_NAME({{data.name}})
+
+{{data.prefix}}{{data.name}}::{{data.prefix}}{{data.name}}(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer)
+{
+    
+}
