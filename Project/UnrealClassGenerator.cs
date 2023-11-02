@@ -33,8 +33,8 @@ public partial class UnrealClassGenerator : Form
 			return;
 
 		string savePath = SavePathTextBox.Text;
-		string prefix = ClassNameTextBox.Text.Substring(startIndex: 0, length: 1);
-		string name = ClassNameTextBox.Text.Substring(startIndex: 1);
+		string prefix = ClassPrefixTextBox.Text;
+		string name = ClassNameTextBox.Text;
 
 		const string headerTemplateFilePath = "Templates/HeaderTemplate.txt";
 		string headerTemplateContent = File.ReadAllText(headerTemplateFilePath);

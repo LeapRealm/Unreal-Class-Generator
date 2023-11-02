@@ -28,13 +28,15 @@ partial class UnrealClassGenerator
 		ClassNameTextBox = new TextBox();
 		GenerateClassFilesButton = new Button();
 		SaveFolderBrowserButton = new Button();
+		ClassPrefixLabel = new Label();
+		ClassPrefixTextBox = new TextBox();
 		SuspendLayout();
 		// 
 		// SavePathLabel
 		// 
 		SavePathLabel.AutoSize = true;
 		SavePathLabel.Font = new Font("Malgun Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-		SavePathLabel.Location = new Point(25, 27);
+		SavePathLabel.Location = new Point(38, 25);
 		SavePathLabel.Name = "SavePathLabel";
 		SavePathLabel.Size = new Size(143, 38);
 		SavePathLabel.TabIndex = 0;
@@ -44,16 +46,16 @@ partial class UnrealClassGenerator
 		// SavePathTextBox
 		// 
 		SavePathTextBox.Font = new Font("Malgun Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-		SavePathTextBox.Location = new Point(214, 27);
+		SavePathTextBox.Location = new Point(200, 27);
 		SavePathTextBox.Name = "SavePathTextBox";
-		SavePathTextBox.Size = new Size(812, 35);
+		SavePathTextBox.Size = new Size(839, 35);
 		SavePathTextBox.TabIndex = 1;
 		// 
 		// ClassNameLabel
 		// 
 		ClassNameLabel.AutoSize = true;
 		ClassNameLabel.Font = new Font("Malgun Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-		ClassNameLabel.Location = new Point(25, 89);
+		ClassNameLabel.Location = new Point(382, 91);
 		ClassNameLabel.Name = "ClassNameLabel";
 		ClassNameLabel.Size = new Size(167, 38);
 		ClassNameLabel.TabIndex = 2;
@@ -63,9 +65,9 @@ partial class UnrealClassGenerator
 		// ClassNameTextBox
 		// 
 		ClassNameTextBox.Font = new Font("Malgun Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point);
-		ClassNameTextBox.Location = new Point(214, 89);
+		ClassNameTextBox.Location = new Point(567, 89);
 		ClassNameTextBox.Name = "ClassNameTextBox";
-		ClassNameTextBox.Size = new Size(899, 42);
+		ClassNameTextBox.Size = new Size(559, 42);
 		ClassNameTextBox.TabIndex = 3;
 		// 
 		// GenerateClassFilesButton
@@ -81,7 +83,7 @@ partial class UnrealClassGenerator
 		// 
 		// SaveFolderBrowserButton
 		// 
-		SaveFolderBrowserButton.Location = new Point(1032, 17);
+		SaveFolderBrowserButton.Location = new Point(1045, 17);
 		SaveFolderBrowserButton.Name = "SaveFolderBrowserButton";
 		SaveFolderBrowserButton.Size = new Size(81, 56);
 		SaveFolderBrowserButton.TabIndex = 5;
@@ -89,11 +91,32 @@ partial class UnrealClassGenerator
 		SaveFolderBrowserButton.UseVisualStyleBackColor = true;
 		SaveFolderBrowserButton.Click += SaveFolderBrowserButton_Click;
 		// 
+		// ClassPrefixLabel
+		// 
+		ClassPrefixLabel.AutoSize = true;
+		ClassPrefixLabel.Font = new Font("Malgun Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+		ClassPrefixLabel.Location = new Point(20, 91);
+		ClassPrefixLabel.Name = "ClassPrefixLabel";
+		ClassPrefixLabel.Size = new Size(161, 38);
+		ClassPrefixLabel.TabIndex = 6;
+		ClassPrefixLabel.Text = "Class Prefix";
+		ClassPrefixLabel.TextAlign = ContentAlignment.MiddleCenter;
+		// 
+		// ClassPrefixTextBox
+		// 
+		ClassPrefixTextBox.Font = new Font("Malgun Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point);
+		ClassPrefixTextBox.Location = new Point(200, 89);
+		ClassPrefixTextBox.Name = "ClassPrefixTextBox";
+		ClassPrefixTextBox.Size = new Size(163, 42);
+		ClassPrefixTextBox.TabIndex = 7;
+		// 
 		// UnrealClassGenerator
 		// 
 		AutoScaleDimensions = new SizeF(12F, 30F);
 		AutoScaleMode = AutoScaleMode.Font;
 		ClientSize = new Size(1150, 254);
+		Controls.Add(ClassPrefixTextBox);
+		Controls.Add(ClassPrefixLabel);
 		Controls.Add(SaveFolderBrowserButton);
 		Controls.Add(GenerateClassFilesButton);
 		Controls.Add(ClassNameTextBox);
@@ -114,4 +137,6 @@ partial class UnrealClassGenerator
 	private TextBox ClassNameTextBox;
 	private Button GenerateClassFilesButton;
 	private Button SaveFolderBrowserButton;
+	private Label ClassPrefixLabel;
+	private TextBox ClassPrefixTextBox;
 }
