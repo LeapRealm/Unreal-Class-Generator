@@ -55,7 +55,7 @@ partial class UnrealClassGenerator
 		// 
 		ClassNameLabel.AutoSize = true;
 		ClassNameLabel.Font = new Font("Malgun Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-		ClassNameLabel.Location = new Point(382, 91);
+		ClassNameLabel.Location = new Point(287, 93);
 		ClassNameLabel.Name = "ClassNameLabel";
 		ClassNameLabel.Size = new Size(167, 38);
 		ClassNameLabel.TabIndex = 2;
@@ -65,9 +65,9 @@ partial class UnrealClassGenerator
 		// ClassNameTextBox
 		// 
 		ClassNameTextBox.Font = new Font("Malgun Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point);
-		ClassNameTextBox.Location = new Point(567, 89);
+		ClassNameTextBox.Location = new Point(480, 89);
 		ClassNameTextBox.Name = "ClassNameTextBox";
-		ClassNameTextBox.Size = new Size(559, 42);
+		ClassNameTextBox.Size = new Size(646, 42);
 		ClassNameTextBox.TabIndex = 3;
 		// 
 		// GenerateClassFilesButton
@@ -104,11 +104,14 @@ partial class UnrealClassGenerator
 		// 
 		// ClassPrefixTextBox
 		// 
+		ClassPrefixTextBox.CharacterCasing = CharacterCasing.Upper;
 		ClassPrefixTextBox.Font = new Font("Malgun Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point);
 		ClassPrefixTextBox.Location = new Point(200, 89);
+		ClassPrefixTextBox.MaxLength = 1;
 		ClassPrefixTextBox.Name = "ClassPrefixTextBox";
-		ClassPrefixTextBox.Size = new Size(163, 42);
-		ClassPrefixTextBox.TabIndex = 7;
+		ClassPrefixTextBox.Size = new Size(56, 42);
+		ClassPrefixTextBox.TabIndex = 2;
+		ClassPrefixTextBox.TextAlign = HorizontalAlignment.Center;
 		// 
 		// UnrealClassGenerator
 		// 
